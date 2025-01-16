@@ -54,7 +54,14 @@
 							"FolderPath": "SourceData/orders_and_shipment"
 						}
 					},
-					"fieldList": [],
+					"fieldList": [
+						{
+							"value": "Child Items",
+							"type": "Expression"
+						},
+						"itemName",
+						"lastModified"
+					],
 					"storeSettings": {
 						"type": "HttpReadSettings",
 						"requestMethod": "GET"
