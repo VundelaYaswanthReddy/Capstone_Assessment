@@ -4,7 +4,7 @@
 		"parameters": {
 			"relativeUrl": {
 				"type": "string",
-				"defaultValue": "@dataset().relativeUrl"
+				"defaultValue": "@item().path"
 			}
 		},
 		"annotations": [],
