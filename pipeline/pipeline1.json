@@ -20,8 +20,11 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
-							"wildcardFolderPath": "SourceData/orders_and_shipment/orders_and_shipments_",
-							"wildcardFileName": "*.csv",
+							"wildcardFolderPath": {
+								"value": "@pipeline().parameters.folderPath",
+								"type": "Expression"
+							},
+							"wildcardFileName": "@pipeline().parameters.filePattern",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
