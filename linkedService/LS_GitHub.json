@@ -1,0 +1,12 @@
+{
+	"name": "LS_GitHub",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/VundelaYaswanthReddy/Capstone_Assessment/main/SourceData/orders_and_shipment/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
