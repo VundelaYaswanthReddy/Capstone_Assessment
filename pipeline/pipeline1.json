@@ -1,0 +1,16 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"parameters": {
+			"folderPath": {
+				"type": "string",
+				"defaultValue": "SourceData/orders_and_shipment/"
+			},
+			"filePattern": {
+				"type": "string",
+				"defaultValue": "orders_and_shipments_*.csv"
+			}
+		},
+		"annotations": []
+	}
+}
