@@ -1,6 +1,12 @@
 {
 	"name": "LS_GitHub_REST_API",
 	"properties": {
+		"parameters": {
+			"relativeUrl": {
+				"type": "string",
+				"defaultValue": "@dataset().relativeUrl"
+			}
+		},
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
