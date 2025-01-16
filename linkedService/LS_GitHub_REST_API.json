@@ -1,0 +1,12 @@
+{
+	"name": "LS_GitHub_REST_API",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://api.github.com/repos/VundelaYaswanthReddy/Capstone_Assessment/contents/SourceData/orders_and_shipment/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
