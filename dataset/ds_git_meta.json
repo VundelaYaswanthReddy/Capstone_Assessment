@@ -1,0 +1,28 @@
+{
+	"name": "ds_git_meta",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Git_Meta",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FolderPath": {
+				"type": "string",
+				"defaultValue": "SourceData/orders_and_shipment"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "@concat('repos/VundelaYaswanthReddy/Capstone_Assessment/contents/', dataset().FolderPath)"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
